@@ -1,1 +1,1 @@
-export { default, getPoints } from './UserRewards'
+export { default, getPoints, numberWithCommas } from './UserRewards'

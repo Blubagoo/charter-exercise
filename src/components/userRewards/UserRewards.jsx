@@ -29,7 +29,7 @@ const UserRewards = () => {
         <h2>Loyalty Points</h2>
           <RenderIf isTrue={!isFetching}>
             <div className="pointWrapper">
-              <p>{rewardPoints} pts.</p>
+              <p>{numberWithCommas(rewardPoints)} pts.</p>
             </div>
           </RenderIf>
           <RenderIf isTrue={isFetching}>
@@ -127,4 +127,8 @@ const useUserTransactions = (id) => {
   }
 
   return { transactionHistory, isFetching, getTransactions }
+}
+
+export function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }

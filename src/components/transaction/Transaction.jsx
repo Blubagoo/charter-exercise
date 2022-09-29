@@ -1,5 +1,5 @@
 import React from 'react'
-import { getPoints } from '../userRewards'
+import { getPoints, numberWithCommas } from '../userRewards'
 
 import './transaction.css'
 
@@ -18,7 +18,7 @@ const Transaction = ({record, isOffset}) => {
         {amount}
       </div>
       <div className="points transaction">
-        {points}
+        {numberWithCommas(points)}
       </div>
     </div>
   )
