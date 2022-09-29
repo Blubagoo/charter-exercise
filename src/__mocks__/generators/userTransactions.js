@@ -1,1 +1,2 @@
-export const userTransactions = (num) => [...Array(num).fill('')].map(() => userTransactions())
+import { userTransaction } from './userTransaction'
+export const userTransactions = (num) => [...Array(num).fill('')].map(() => userTransaction())
