@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header } from '../../components'
+import { Header, UserRewards } from '../../components'
 
 import './rewardsProgram.css'
 /**
@@ -10,7 +10,11 @@ const RewardsProgram = () => {
 	return (
 		<div className="rewardsProgramWrapper">
 			<Header />
-			{/* <UserRewards /> */}
+			<div className="body">
+				<div className="userRewardsWrapper">
+					<UserRewards />
+				</div>
+			</div>
 		</div>
 	)
 }
