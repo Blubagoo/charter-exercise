@@ -1,0 +1,22 @@
+.transactionWrapper {
+  display: flex;
+  border-bottom: 1px solid #002133;
+}
+.transaction {
+  padding: 8px;
+}
+.grey {
+  background: #ececec;
+}
+.date {
+  width: 40%;
+}
+.title {
+  width: 30%;
+}
+.amount { 
+  width: 15%;
+}
+.points {
+  width: 15%;
+}
